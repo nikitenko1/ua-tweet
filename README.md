@@ -4,7 +4,9 @@
 
 [Deployed on ]
 
-#### https://............herokuapp.com/
+#### https://ua-tweet.herokuapp.com/
+#### signup option to expire in 7 days : Google Authorization and Authentication documentation
+* The application has a status of 'Testing' and the consent screen is configured for an external user type, causing the token to expire in 7 days
 
 ## Built using
 
