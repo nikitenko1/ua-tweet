@@ -1,0 +1,184 @@
+/* alert error */
+.alert {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--lightColor);
+  border: 5px solid var(--lightColor);
+  background-color: var(--errorColor);
+  padding: 1rem;
+  z-index: 100;
+  max-width: 28rem;
+}
+
+/* spinner */
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: transform(-50%, -50%);
+  border: 5px solid var(--lightColor);
+  border-radius: 50%;
+  border-top: 4px solid var(--primaryColor);
+  animation: spin 1s linear infinite;
+  z-index: 10;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* center svg */
+.full-page-loader {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.full-page-loader svg {
+  fill: rgb(31, 162, 241);
+  width: 3rem;
+  height: 3rem;
+}
+/* textinput */
+.textInput {
+  width: 90%;
+  height: 6.5rem;
+  position: relative;
+  color: var(--secondaryColor);
+}
+.textInput input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--inputBorder);
+  background-color: var(--rootBgColor);
+  color: var(--rootTextColor);
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  word-wrap: break-word;
+  padding-left: 1rem;
+  padding-top: 2rem;
+}
+.textInput__placeholder {
+  position: absolute;
+  pointer-events: none;
+  left: 1rem;
+  top: 2rem;
+  font-size: 1.8rem;
+  transition: 0.2s ease all;
+}
+
+.textInput__length {
+  position: absolute;
+  pointer-events: none;
+  top: 2rem;
+  right: 1rem;
+  font-size: 1.8rem;
+  transition: 0.2s ease all;
+  display: none;
+}
+
+.textInput input:focus {
+  border: 1px solid var(--primaryColor);
+}
+
+.textInput .input-error:focus,
+.textInput .input-error {
+  border: 1px solid var(--errorColor);
+}
+
+.textInput input:focus ~ .textInput__length,
+.textInput input:focus ~ .textInput__placeholder {
+  top: 0.8rem;
+  font-size: 1.3rem;
+  opacity: 1;
+  color: var(--primaryColor);
+}
+
+.textInput input:focus ~ .textInput .text-error {
+  color: var(--errorColor);
+}
+
+.textInput input:focus ~ .textInput__length {
+  display: block;
+}
+
+.textInput__placeholder--focus {
+  top: 0.8rem;
+  font-size: 1.3rem;
+}
+/* Tweet Container */
+.tweetTextarea {
+  width: 100%;
+  resize: none;
+  font-size: 1.9rem;
+  font-weight: 450;
+  outline: none;
+  border: none;
+  margin-bottom: 1rem;
+  background-color: var(--rootBgColor);
+  color: var(--rootTextColor);
+  caret-color: var(--rootTextColor);
+  padding-top: 0.9rem;
+  font-family: var(--primaryFont);
+}
+.tweetTextarea::placeholder {
+  font-size: 2rem;
+}
+.postImage {
+  width: 95%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.previewClose {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--rootBgColor);
+  color: var(--rootTextColor);
+  border-radius: 50%;
+  padding: 0 5px 2px 5px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.previewClose:hover {
+  font-size: large;
+  color: #2196f3;
+}
+
+/* circular progress */
+.progress {
+  transform: rotate(-90deg) translate(-14px) !important;
+  color: var(--primaryColor) !important;
+  margin-right: 2rem;
+}
+/* linear progress Override React Material UI */
+.MuiLinearProgress-colorPrimary {
+  background-color: var(--primaryColorBg) !important;
+}
+.MuiLinearProgress-bar {
+  background-color: var(--primaryColor) !important;
+}

@@ -1,0 +1,76 @@
+/* hover */
+
+.bgLightHover:hover {
+  background-color: var(--lightColor);
+}
+
+.bgHover:hover {
+  background-color: var(--primaryColorBg);
+}
+
+.hoverState {
+  cursor: pointer;
+  color: var(--primaryColor);
+}
+
+.hoverState:hover,
+.hoverUnderline:hover {
+  text-decoration: underline;
+}
+
+.postHover:hover {
+  background-color: var(--postHover);
+}
+
+.caret-rootText {
+  caret-color: var(--rootTextColor);
+}
+
+/* Post */
+.postImage {
+  /* max-width: 60rem; */
+  width: 95%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.like:hover {
+  background-color: rgb(224, 36, 94, 0.1);
+}
+
+.like:hover + span,
+.likeContainer.active span {
+  color: rgb(224, 36, 94);
+}
+
+.like:hover svg,
+.likeContainer.active svg {
+  fill: rgb(224, 36, 94);
+}
+
+.retweet:hover {
+  background-color: rgb(23, 191, 99, 0.1);
+}
+
+.retweet:hover + span,
+.retweetContainer.active span {
+  color: rgb(23, 191, 99);
+}
+
+.retweet:hover svg,
+.retweetContainer.active svg {
+  fill: rgb(23, 191, 99);
+}
+
+.reply:hover {
+  background-color: rgba(29, 161, 242, 0.1);
+}
+
+.reply:hover + span {
+  color: rgba(29, 161, 242);
+}
+
+.reply:hover svg {
+  fill: rgba(29, 161, 242);
+}

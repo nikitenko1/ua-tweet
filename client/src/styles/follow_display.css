@@ -1,0 +1,37 @@
+.whoToFollow {
+  background-color: var(--message);
+  padding: 20px 0;
+  border-radius: 9px;
+  margin: 20px 20px 0 0;
+}
+/* NAV --> DISPLAY */
+.display__color {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  border-radius: 10px;
+  margin: 0.5rem auto;
+  background-color: var(--displayBg);
+}
+.colorInput {
+  opacity: 0;
+}
+.colorLabel {
+  border: none;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.colorInput:checked + .colorLabel:before {
+  content: '✓';
+  color: white;
+}
+.display__theme {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 10px;
+  background-color: var(--displayBg);
+  margin: 0.5rem auto;
+}

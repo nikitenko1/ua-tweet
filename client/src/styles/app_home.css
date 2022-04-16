@@ -1,0 +1,52 @@
+.main {
+  display: grid;
+  grid-template-columns: 25rem 60rem minmax(29rem, 38rem);
+  max-width: 123.5rem;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+.main__nav {
+  position: sticky;
+  top: 0;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.main__body {
+  border: solid 0 var(--lightColor);
+  border-width: 0 0.1rem;
+}
+.main__side {
+  padding-left: var(--spacing);
+  position: sticky;
+  top: 0;
+  max-height: 100vh;
+}
+.main__header {
+  height: 5rem;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background-color: var(--rootBgColor);
+  border-bottom: 0.1rem solid var(--lightColor);
+  padding: var(--spacing);
+  z-index: 2;
+}
+.main__header span {
+  flex: 1;
+  font-weight: 800;
+  font-size: 1.9rem;
+  margin-left: 15px;
+}
+/* Home */
+.tweetButton {
+  padding: 1rem 1rem 0.8rem 1rem;
+  position: fixed;
+  z-index: 2;
+  bottom: 80px;
+  right: 35px;
+  width: 50px;
+}

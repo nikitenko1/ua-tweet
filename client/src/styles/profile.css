@@ -1,0 +1,49 @@
+.coverPhoto {
+  width: 100%;
+  height: 200px;
+  background-color: #c4cfd6;
+  position: relative;
+}
+
+.profilePhoto {
+  width: 132px;
+  height: 132px;
+  margin-left: var(--spacing);
+  position: absolute;
+  bottom: -50px;
+}
+.profilePhoto img {
+  border: 5px solid var(--rootBgColor);
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.editProfileButton {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+.profile__tabs {
+  display: flex;
+  margin-top: 1rem;
+}
+.tab {
+  flex: 1;
+  font-weight: 700;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--secondaryColor);
+  background-color: transparent;
+  padding: 15px 0;
+}
+.tab:hover {
+  background-color: var(--primaryColorBg);
+  color: var(--primaryColor);
+}
+.tab.activeTab {
+  border-bottom: 3px solid var(--primaryColor);
+  color: var(--primaryColor);
+}

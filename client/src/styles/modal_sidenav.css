@@ -1,0 +1,96 @@
+/* SideNav */
+.sidenavContainer {
+  position: fixed;
+  top: 10px;
+  left: 15px;
+  z-index: 3;
+}
+.sidenav {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: var(--rootBgColor);
+  overflow-x: hidden;
+  transition: 0.1s;
+}
+.modalContainer,
+.transparentModal,
+.sidenavModal {
+  background-color: rgba(91, 112, 131, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+}
+.transparentModal {
+  background-color: transparent;
+  z-index: 3;
+}
+.child,
+.modal,
+.topModal {
+  background-color: var(--rootBgColor);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 600px;
+  height: 85%;
+  z-index: 100;
+  text-align: center;
+  overflow-y: scroll;
+}
+.inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+.modal {
+  width: fit-content;
+  height: auto;
+  z-index: 3000;
+}
+.topModal {
+  max-height: 90vh;
+  height: auto;
+  z-index: 3;
+  top: 10%;
+  overflow-y: auto;
+  transform: translate(-50%, -10%);
+}
+.options {
+  background-color: var(--rootBgColor);
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: fit-content;
+  height: auto;
+}
+.modalCloseButton {
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--rootBgColor);
+  border-bottom: 1px solid var(--inputBorder);
+  z-index: 3;
+}
+.reply__line {
+  width: 2px;
+  background-color: var(--secondaryColor);
+  flex: 1;
+  margin: 0.4rem auto 0;
+}

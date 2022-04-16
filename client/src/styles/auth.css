@@ -1,0 +1,62 @@
+.frontPage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+}
+.frontPage__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(116, 202, 254);
+  position: relative;
+  overflow: hidden;
+}
+.frontPage_left--svg {
+  position: absolute;
+  top: -30vh;
+  right: -40vh;
+  height: 160vh;
+  width: 92rem;
+}
+.frontPage__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.frontPage__right--content,
+.frontPage__left--content {
+  max-width: 380px;
+}
+/* signup */
+.dob span {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 14px;
+  color: var(--secondaryColor);
+}
+.dob-select {
+  padding-top: 2.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 9rem;
+  border: 1px solid var(--inputBorder);
+  border-radius: 0.5rem;
+}
+
+/* login */
+.login,
+.beginPasswordReset,
+.confirmPinReset,
+.resetPassword {
+  max-width: 400px;
+  margin: 0 auto;
+}
+/* startPasswordReset */
+.beginPasswordReset input,
+.confirmPinReset input {
+  border: 1.5px solid var(--primaryColor);
+  border-radius: 100px;
+  padding: 0.7rem 0 6px 0.7rem;
+  margin-top: 2rem;
+}

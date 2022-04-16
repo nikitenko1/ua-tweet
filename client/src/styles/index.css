@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root {
+  --primaryFont: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif;
+  --primaryColor: rgba(29, 161, 242, 1);
+  --primaryColorBg: rgba(29, 161, 242, 0.1);
+  --secondaryColor: rgb(91, 112, 131);
+  --rootTextColor: rgb(15, 20, 25);
+  --rootBgColor: rgb(255, 255, 255);
+  --lightColor: rgb(235, 238, 240);
+  --inputBorder: rgb(196, 207, 214);
+  --errorColor: rgb(255, 14, 14);
+  --warningColor: rgb(244, 128, 36);
+  --spacing: 15px;
+  --displayBg: rgb(247, 249, 250);
+  --postHover: rgb(235, 238, 240, 0.5);
+  --fontSize: 10px;
+  --message: rgb(239, 241, 242);
+}
+
+/* -------- COMMON ---------- */
+@import url('./common.css');
+/* -------- PAGES: AUTH ROUTES ---------- */
+@import url('./auth.css');
+/* -------- PAGES: PROFILE ---------- */
+@import url('./profile.css');
+/* -------- PAGES: FOLLOW NAV-DISPLAY ---------- */
+@import url('./follow_display.css');
+/* -------- PAGES: APP, HOME ---------- */
+@import url('./app_home.css');
+/* -------- COMPONENTS: alert ---------- */
+@import url('./components.css');
+/* -------- COMPONENTS: SearchComponent ---------- */
+@import url('./search.css');
+/* -------- COMPONENTS: modal ---------- */
+@import url('./modal_sidenav.css');
+/* -------- COMPONENTS: post, hover ---------- */
+@import url('./post_hover.css');
+/* -------- COMPONENTS: chat, messages ---------- */
+@import url('./chat_message.css');
+/* -------- @media screen ---------- */
+@import url('./@media.css');
