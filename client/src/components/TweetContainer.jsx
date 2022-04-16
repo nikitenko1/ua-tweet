@@ -88,7 +88,7 @@ const TweetContainer = ({
     const token = JSON.parse(localStorage.getItem('token'));
 
     try {
-      const { data } = await axios.post(`/post`, formData, {
+      const { data } = await axios.post(`/api/post`, formData, {
         headers: {
           'content-type': 'multipart/form-data',
           Authorization: `Bearer ${token}`,
